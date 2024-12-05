@@ -1,61 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <h1>Guess a number between 1 - 42</h1>
-    <input id="inputNumber" placeholder="Guess a number..." type="number">
-    <button onclick="submit()"> Submit</button>
-
-    <p id="Guess">Your Guess is: </p>
-
-    <button onclick="GenerateLottery()">Reveal</button>
-    <p id="Lottery"> The winning numbers are: </p>
-
-    <h2>Result:</h2>
-    <p id="Result"></p>
-
-    <script>
-        let randomNumbers = [];
-        function GenerateLottery() {
-
-            for (let i = 0; i < 7; i++) {
-
-                randomNumbers.push(Math.floor(Math.random() * 42) + 1);
-                if (randomNumbers.includes(randomNumbers[i] == false)) {
-                    randomNumbers.push(Math.floor(Math.random() * 42) + 1);
-                }
-
-
-
-            }
-            randomNumbers = document.getElementById("Lottery").textContent = `The winning numbers are: ${randomNumbers}`
-
-            if (randomNumbers.includes(Guess)) {
-                document.getElementById("Result").textContent = ("YOU WON THE LOTTERY!")
-                console.log("win!");
-                
-            }
-            else{
-                document.getElementById("Result").textContent = ("You lost this time...")
-                console.log("lose!");
-                
-            }
-            
-        }
-
-
-        function submit() {
-            Guess = document.getElementById("inputNumber").value;
-            document.getElementById("Guess").textContent = `Your Guess is:  ${Guess} `
-        }
-    
-    </script>
+    <u><h1>Welcome to the lottery!</h1></u>
+    <button><a href="Game.html">PLAY</a></button>
 </body>
-
 </html>
