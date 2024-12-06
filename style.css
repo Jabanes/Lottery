@@ -1,0 +1,90 @@
+/* General body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('lotto.png') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items from the top */
+    gap: 20px; /* Add spacing between elements */
+    min-height: 100vh; /* Ensure the page covers the full viewport height */
+}
+
+/* Header styling */
+h1, h2 {
+    padding: 10px 20px;
+    color: #ffc700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 2px solid #ffc700;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Input styling */
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ffc700;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons styling */
+button {
+    background: #fc4a1a;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+    
+
+button:hover {
+    background: #f7b733;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for readability */
+    color: #ffc700;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for specific sections */
+#Guess, #Lottery, #Result {
+    width: 80%; /* Ensure uniform width for all sections */
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Styling for the Play Again button */
+#PlayAgain {
+    background: #28a745; /* Green background for Play Again */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#PlayAgain:hover {
+    background: #218838; /* Darker green on hover */
+}
