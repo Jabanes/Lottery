@@ -28,7 +28,7 @@ function GenerateLottery() {
 
     }
     else {
-        document.getElementById("Result").textContent = ("I can't reveal without a vaild guess!")
+        document.getElementById("Lottery").textContent = ("I can't reveal without a vaild guess!")
     }
 }
 
